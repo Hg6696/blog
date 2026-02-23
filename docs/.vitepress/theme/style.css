@@ -1,0 +1,65 @@
+/**
+ * 全局科技感主题样式定义
+ */
+ :root {
+  --vp-c-brand-1: #646cff;
+  --vp-c-brand-2: #747bff;
+  --vp-c-brand-3: #8a8fff;
+  --vp-c-brand-soft: rgba(100, 108, 255, 0.14);
+
+  /* 主页英雄区块按钮和背景设定 */
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #fff;
+  --vp-button-brand-bg: #646cff;
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #fff;
+  --vp-button-brand-hover-bg: #747bff;
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: #fff;
+  --vp-button-brand-active-bg: #646cff;
+
+  /* 文字颜色调整，增加科技冷色感 */
+  --vp-c-text-1: rgba(255, 255, 255, 0.87);
+}
+
+html:not(.dark) {
+  --vp-c-brand-1: #41d1ff;
+  --vp-c-brand-2: #646cff;
+  --vp-c-brand-3: #bd34fe;
+  
+  --vp-c-text-1: #213547;
+}
+
+/* 首页Logo背部光晕增强 */
+.image-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160px;
+  height: 160px;
+  background-image: linear-gradient(-45deg, #bd34fe 50%, #41d1ff 50%);
+  filter: blur(50px);
+  z-index: 1;
+  opacity: 0.6;
+}
+
+.VPImage.logo {
+  z-index: 2;
+  position: relative;
+}
+
+/* 自定义卡片鼠标悬停发光 */
+.VPFeature {
+  transition: all 0.3s ease;
+}
+.VPFeature:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px 0 rgba(100, 108, 255, 0.2);
+  border-color: rgba(100, 108, 255, 0.5);
+}
+
+/* 自定义段落背景（突出某些重要内容） */
+.custom-block.info {
+  border-color: var(--vp-c-brand-1);
+}
