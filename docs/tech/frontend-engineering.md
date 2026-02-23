@@ -2,6 +2,7 @@
 title: 前端工程化基石
 description: 探讨现代前端工程化中的规范化、自动化构建与性能监控体系。
 cover: https://picsum.photos/seed/frontend/600/400
+date: 2024-09-01
 ---
 
 前端开发早已告别了“几个HTML+JS打天下”的时代。现代前端工程化旨在提高团队协作效率、代码质量和交付稳定性。

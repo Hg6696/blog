@@ -10,9 +10,10 @@ export default createContentLoader('**/*.md', {
         url: page.url,
         cover: page.frontmatter.cover || 'https://picsum.photos/600/400',
         description: page.frontmatter.description || '',
+        date: page.frontmatter.date || '2024-01-01',
         category: page.url.split('/')[1] + (page.url.split('/')[2] && page.url.split('/')[2] !== 'index.html' ? '/' + page.url.split('/')[2] : '')
       }))
-      // 这里可以做排序，我们暂时按照路径排序，或未来扩展时间排序
-      .sort((a, b) => a.url.localeCompare(b.url))
+      // 按日期降序排序（最新在前）
+      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
   }
 })

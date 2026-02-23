@@ -2,6 +2,7 @@
 title: 什么是通用人工智能(AGI)?
 description: 探讨AGI的定义、核心特征以及我们距离真正的AGI还有多远。
 cover: https://picsum.photos/seed/agi/600/400
+date: 2024-01-15
 ---
 
 通用人工智能（Artificial General Intelligence，简称 AGI），是人工智能研究领域的一个重要目标和理论概念。与目前主流的**狭义人工智能（Narrow AI）**（如面部识别系统、下棋程序、甚至ChatGPT这样的语言模型）不同，AGI 旨在创造出具备全面认知能力的机器，使其能够理解、学习并执行人类可以完成的**任何智力任务**。

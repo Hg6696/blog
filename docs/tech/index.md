@@ -1,6 +1,8 @@
 ---
 title: 技术开发心得
 description: 分享前端工程化、架构设计以及 AI 辅助编程的技术经验。
+outline: false
+pageClass: no-aside
 ---
 # 技术开发心得
 

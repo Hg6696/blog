@@ -30,20 +30,48 @@ export default defineConfig({
           text: 'AI 前沿动态',
           collapsed: false,
           items: [
-            { text: '什么是通用人工智能(AGI)?', link: '/ai/news/what-is-agi' },
-            { text: '2025 AI 发展趋势预测', link: '/ai/news/trends-2025' }
+            { text: 'AI Agent：从对话到自主决策的范式革命', link: '/ai/news/ai-agent-revolution' },
+            { text: '多模态 AI：跨越文字与感官的综合智能', link: '/ai/news/multimodal-ai' },
+            { text: '2025 AI 发展趋势预测', link: '/ai/news/trends-2025' },
+            { text: '什么是通用人工智能(AGI)?', link: '/ai/news/what-is-agi' }
           ]
         },
         {
           text: 'AI 大模型解析',
           collapsed: false,
           items: [
-            { text: '大语言模型(LLM)的原理解密', link: '/ai/models/llm-explained' },
-            { text: '开源与闭源模型的终极对决', link: '/ai/models/open-vs-closed' }
+            { text: '开源与闭源模型的终极对决', link: '/ai/models/open-vs-closed' },
+            { text: '大语言模型(LLM)的原理解密', link: '/ai/models/llm-explained' }
+          ]
+        },
+        {
+          text: '技术开发心得',
+          items: [
+            { text: 'Vue 3 与 Vite 的最佳实践', link: '/tech/vue3-vite-best-practices' },
+            { text: '前端工程化基石', link: '/tech/frontend-engineering' },
+            { text: '如何利用AI辅助编程提高10倍效率', link: '/tech/ai-assisted-coding' }
           ]
         }
       ],
       '/tech/': [
+        {
+          text: 'AI 前沿动态',
+          collapsed: false,
+          items: [
+            { text: 'AI Agent：从对话到自主决策的范式革命', link: '/ai/news/ai-agent-revolution' },
+            { text: '多模态 AI：跨越文字与感官的综合智能', link: '/ai/news/multimodal-ai' },
+            { text: '2025 AI 发展趋势预测', link: '/ai/news/trends-2025' },
+            { text: '什么是通用人工智能(AGI)?', link: '/ai/news/what-is-agi' }
+          ]
+        },
+        {
+          text: 'AI 大模型解析',
+          collapsed: false,
+          items: [
+            { text: '开源与闭源模型的终极对决', link: '/ai/models/open-vs-closed' },
+            { text: '大语言模型(LLM)的原理解密', link: '/ai/models/llm-explained' }
+          ]
+        },
         {
           text: '技术开发心得',
           items: [
@@ -76,7 +104,10 @@ export default defineConfig({
 
     outline: {
       label: '页面导航',
-      level: [2, 3]
+      level: [2, 3],
+      '/ai/news/': false,
+      '/ai/models/': false,
+      '/tech/': false
     },
 
     returnToTopLabel: '回到顶部',

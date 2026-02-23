@@ -63,3 +63,25 @@ html:not(.dark) {
 .custom-block.info {
   border-color: var(--vp-c-brand-1);
 }
+
+/* 分类页面隐藏右侧大纲导航 */
+.Layout.no-aside .VPDoc .aside,
+.Layout.no-aside .VPDocAsideOutline,
+.Layout.no-aside .VPDocAside {
+  display: none !important;
+}
+
+/* 分类页面内容铺满，减少两侧空白 */
+.Layout.no-aside .VPDoc .content,
+.Layout.no-aside .VPDoc .content-container,
+.Layout.no-aside .VPDoc .main,
+.Layout.no-aside .VPContent.has-aside,
+.Layout.no-aside .VPDoc.has-aside,
+.Layout.no-aside .VPDoc.has-aside .container {
+  max-width: 100% !important;
+}
+
+.Layout.no-aside .VPDoc .content-container {
+  padding-left: 24px;
+  padding-right: 24px;
+}

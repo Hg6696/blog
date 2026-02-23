@@ -1,6 +1,8 @@
 ---
 title: AI 大模型
 description: 深入解析主流大语言模型的底层架构与实战对比。
+outline: false
+pageClass: no-aside
 ---
 # AI 大模型
 

@@ -1,6 +1,8 @@
 ---
 title: AI 前沿动态
 description: 探索人工智能领域的最新资讯与发展趋势。
+outline: false
+pageClass: no-aside
 ---
 # AI 前沿动态
 

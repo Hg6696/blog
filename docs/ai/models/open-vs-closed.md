@@ -2,6 +2,7 @@
 title: 开源与闭源模型的终极对决
 description: 剖析闭源模型与开源模型各自的优势与未来混合架构的可能性。
 cover: https://picsum.photos/seed/vs/600/400
+date: 2024-12-15
 ---
 
 AI 领域的竞争正在分化为两大阵营：以 OpenAI、Anthropic 为首的“闭源派”，和以 Meta (Llama)、Mistral、Qwen 为首的“开源派”。
