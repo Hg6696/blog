@@ -1,4 +1,8 @@
-# 如何利用AI辅助编程提高10倍效率
+---
+title: 如何利用AI辅助编程提高10倍效率
+description: 探讨如何将 Cursor、Copilot 等 AI 编程助手融入日常开发流。
+cover: https://picsum.photos/seed/code/600/400
+---
 
 程序员会被 AI 替代吗？答案是：“不会用 AI 的程序员才会被替代。”
 

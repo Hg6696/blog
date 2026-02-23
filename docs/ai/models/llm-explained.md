@@ -1,4 +1,8 @@
-# 大语言模型(LLM)的原理解密
+---
+title: 大语言模型(LLM)的原理解密
+description: 深入解析Transformer架构与大语言模型的训练三步曲。
+cover: https://picsum.photos/seed/llm/600/400
+---
 
 大语言模型（LLM, Large Language Model）是当前 AI 热潮的核心引擎。本文带你拆解其背后的黑盒。
 

@@ -8,7 +8,7 @@ export default defineConfig({
   cleanUrls: true,
   
   head: [
-    ['link', { rel: 'icon', href: '/logo.svg' }],
+    ['link', { rel: 'icon', href: '/hgblog.png' }],
     ['meta', { name: 'theme-color', content: '#646cff' }]
   ],
 
@@ -20,7 +20,8 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: 'AI 前沿动态', link: '/ai/news/', activeMatch: '/ai/news/' },
       { text: 'AI 大模型', link: '/ai/models/', activeMatch: '/ai/models/' },
-      { text: '技术开发心得', link: '/tech/', activeMatch: '/tech/' }
+      { text: '技术开发心得', link: '/tech/', activeMatch: '/tech/' },
+      { text: '关于我', link: '/about' }
     ],
 
     sidebar: {

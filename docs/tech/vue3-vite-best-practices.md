@@ -1,4 +1,8 @@
-# Vue 3 与 Vite 的最佳实践
+---
+title: Vue 3 与 Vite 的最佳实践
+description: 总结在现代前端开发中，使用Vue 3 Composition API与Vite构建的高效开发方式。
+cover: https://picsum.photos/seed/vue/600/400
+---
 
 在现代前端开发中，Vue 3 的 Composition API 和 Vite 的极速构建已经成为了天作之合。
 

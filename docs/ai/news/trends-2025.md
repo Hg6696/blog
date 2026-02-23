@@ -1,4 +1,8 @@
-# 2025 AI 发展趋势预测
+---
+title: 2025 AI 发展趋势预测
+description: 展望2025年人工智能领域的发展趋势，包括多模态、端侧AI和智能体。
+cover: https://picsum.photos/seed/trend/600/400
+---
 
 随着 Transformer 架构的不断演进，2025年的人工智能领域又将迎来怎样的变化？
 
