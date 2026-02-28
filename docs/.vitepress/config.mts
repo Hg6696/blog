@@ -9,7 +9,10 @@ export default defineConfig({
   
   head: [
     ['link', { rel: 'icon', href: '/hgblog.png' }],
-    ['meta', { name: 'theme-color', content: '#646cff' }]
+    ['meta', { name: 'theme-color', content: '#646cff' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+    ['link', { href: 'https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap', rel: 'stylesheet' }]
   ],
 
   themeConfig: {
@@ -40,6 +43,7 @@ export default defineConfig({
           text: 'AI 大模型解析',
           collapsed: false,
           items: [
+            { text: '测试文章', link: '/ai/models/test' },
             { text: '开源与闭源模型的终极对决', link: '/ai/models/open-vs-closed' },
             { text: '大语言模型(LLM)的原理解密', link: '/ai/models/llm-explained' }
           ]
