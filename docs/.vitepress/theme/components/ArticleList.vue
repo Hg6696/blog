@@ -1,20 +1,22 @@
-<script setup>
-import { defineProps } from 'vue'
+<script setup lang="ts">
+interface Post {
+  url: string;
+  title: string;
+  cover: string;
+  description: string;
+  date: string;
+  category: string;
+}
 
-const props = defineProps({
-  posts: {
-    type: Array,
-    required: true
-  }
-})
+const { posts } = defineProps<{ posts: Post[] }>();
 </script>
 
 <template>
   <div class="article-list">
-    <a 
-      v-for="post in posts" 
-      :key="post.url" 
-      :href="post.url" 
+    <a
+      v-for="post in posts"
+      :key="post.url"
+      :href="post.url"
       class="article-card"
     >
       <div class="card-image-wrapper">
@@ -36,6 +38,19 @@ const props = defineProps({
   margin-top: 16px;
 }
 
+@media (max-width: 960px) {
+  .article-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .article-list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
 .article-card {
   display: flex;
   flex-direction: column;
@@ -45,7 +60,10 @@ const props = defineProps({
   overflow: hidden;
   text-decoration: none !important;
   color: var(--vp-c-text-1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }

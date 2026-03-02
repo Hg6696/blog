@@ -30,13 +30,3 @@ features:
     details: 探讨如何将 Cursor、Copilot 等 AI 编程助手融入日常开发流，实现 10 倍效率跃升。
     link: /tech/
 ---
-
-<style>
-:root {
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
-  
-  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #41d1ff 50%);
-  --vp-home-hero-image-filter: blur(40px);
-}
-</style>

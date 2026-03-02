@@ -3,7 +3,10 @@ title: AI 大模型
 description: 深入解析主流大语言模型的底层架构与实战对比。
 outline: false
 pageClass: no-aside
+prev: false
+next: false
 ---
+
 # AI 大模型
 
 深入解析主流大语言模型的底层架构与实战对比。
@@ -12,7 +15,7 @@ pageClass: no-aside
 import { data } from '../../posts.data.mts'
 import { computed } from 'vue'
 
-const posts = computed(() => data.filter(p => p.url.includes('/ai/models/') && !p.url.endsWith('index.html')))
+const posts = computed(() => data.filter(p => p.url.includes('/ai/models/') && !p.url.endsWith('/')))
 </script>
 
 <ArticleList :posts="posts" />

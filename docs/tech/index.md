@@ -3,7 +3,10 @@ title: 技术开发心得
 description: 分享前端工程化、架构设计以及 AI 辅助编程的技术经验。
 outline: false
 pageClass: no-aside
+prev: false
+next: false
 ---
+
 # 技术开发心得
 
 分享前端工程化、架构设计以及 AI 辅助编程的技术经验。
@@ -12,7 +15,7 @@ pageClass: no-aside
 import { data } from '../posts.data.mts'
 import { computed } from 'vue'
 
-const posts = computed(() => data.filter(p => p.url.includes('/tech/') && !p.url.endsWith('index.html')))
+const posts = computed(() => data.filter(p => p.url.includes('/tech/') && !p.url.endsWith('/')))
 </script>
 
 <ArticleList :posts="posts" />
